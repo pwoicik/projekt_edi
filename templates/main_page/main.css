@@ -1,0 +1,70 @@
+body,
+html 
+{
+  height: 100%
+}
+
+.bg-image
+{
+  background-image: url(../../../background5.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  filter: blur(8px);
+  -webkit-filter: blur(2px);
+}
+
+#particles-js 
+{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+    
+#overlay 
+{
+  position: relative;
+  padding: 50px;
+}
+
+.jumbotron
+{
+  position: relative;
+  top: 130px;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar
+{
+  z-index: 1;
+  height: 70px;
+}
+
+.nav-item:hover
+{
+  color: #333;
+  border-bottom: 1px solid grey;
+}
+
+.form-control-borderless {
+  border:none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}

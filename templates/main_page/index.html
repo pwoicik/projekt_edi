@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+      <title>EDI Project</title>
+
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  
+      <!-- Custom styles for this template -->
+      <link href="main.css" rel="stylesheet">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <link href="https://assets.genius.com/stylesheets/compiled/embedded_song-f2eb859110213a836c912e26570f05e8.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="bg-image"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand">EDI Project</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+         <div class="navbar-nav">
+          <a class="nav-item nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link text-light" href="#">Graphs</a>
+          <a class="nav-item nav-link text-light" href="#">About</a>
+          <!-- search bar in navbar, test 
+          <form class="form-inline ml-auto">
+            <div class="md-form my-0">
+              <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </div>
+            <button href="#!" class="btn btn-outline-white btn-md my-0 ml-sm-2" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+     </nav>
+
+      <div class="container text-center">
+        <div id="particles-js"></div>
+        <div id="overlay">   
+          <div class="jumbotron bg-transparent">
+            <h1 class="display-4">Search for your favourite songs:</h1>
+            <form class="card card-sm">
+              <div class="card-body row no-gutters align-items-center">
+                  <div class="col-auto">
+                      <i class="fas fa-search h4 text-body"></i>
+                  </div>
+                  <!--end of col-->
+                  <div class="col">
+                      <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Type song name or artist">
+                  </div>
+                  <!--end of col-->
+                  <div class="col-auto">
+                      <button class="btn btn-lg btn-secondary" type="submit">Search</button>
+                  </div>
+                  <!--end of col-->
+              </div>
+          </form>
+          </div>
+        </div>
+      </div>
+
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
