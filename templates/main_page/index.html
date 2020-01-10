@@ -3,9 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
 
   <title>rglfm</title>
+
+  <!-- jQuery scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -14,40 +17,41 @@
   <!-- Bootstrap core JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-  <!-- jQuery scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
   <!-- Genius song embedding stylesheets -->
   <link href="https://assets.genius.com/stylesheets/compiled/embedded_song-f2eb859110213a836c912e26570f05e8.css"
-  media="screen" rel="stylesheet" type="text/css">
+    media="screen" rel="stylesheet" type="text/css">
+
+  <!-- particles JS script -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
   <!-- Custom styles -->
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="rglfm.css">
 </head>
 
 <body>
   <div class="bg-image"></div>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand">rglfm</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#">rglfm</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link text-light" href="#">Charts</a>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <a class="nav-item active nav-link text-light" href="#">Charts</a>
         <a class="nav-item nav-link text-light" href="#">About</a>
-        <!-- search bar in navbar, test 
-          <form class="form-inline ml-auto">
-            <div class="md-form my-0">
-              <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-            </div>
-            <button href="#!" class="btn btn-outline-white btn-md my-0 ml-sm-2" type="submit">Search</button>
-          </form> -->
-      </div>
+      </ul>
     </div>
+    <!-- search bar in navbar, test 
+      <form class="form-inline ml-auto">
+        <div class="md-form my-0">
+          <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+        </div>
+        <button href="#!" class="btn btn-outline-white btn-md my-0 ml-sm-2" type="submit">Search</button>
+      </form> 
+    -->
   </nav>
 
   <div class="container text-center">
@@ -76,8 +80,8 @@
     </div>
   </div>
 
-  <script type="text/javascript" src="particles.js"></script>
-  <script type="text/javascript" src="app.js"></script>
+  <!-- setting up particles js -->
+  <script type="text/javascript" src="initializeParticles.js"></script>
+  
 </body>
-
 </html>
