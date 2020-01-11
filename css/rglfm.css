@@ -60,3 +60,7 @@ nav, #overlay {
     color: white;
     text-shadow: 2px 2px 0 #000;
 }
+
+.text-grey {
+    color: #cecece;
+}
