@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+
     <title>rglfm</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link href="https://assets.genius.com/stylesheets/compiled/embedded_song-f2eb859110213a836c912e26570f05e8.css"
-          media="screen" rel="stylesheet" type="text/css"/>
 
-    <script src="pages/about.js"></script>
-    <script src="pages/chart.js"></script>
-    <script src="pages/error404.js"></script>
-    <script src="pages/graphs.js"></script>
-    <script src="pages/home.js"></script>
-    <script src="pages/search.js"></script>
-    <script src="pages/song.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Bootstrap fonts -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+    <!-- Bootstrap core JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Genius song embedding stylesheets -->
+    <link href="https://assets.genius.com/stylesheets/compiled/embedded_song-f2eb859110213a836c912e26570f05e8.css"
+          media="screen" rel="stylesheet" type="text/css">
+
+    <!-- particles JS script -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/rglfm.css">
+
     <script src="utils.js"></script>
-    <script src="router.js"></script>
-    <script src="components/navBar.js"></script>
+    <!-- web page router -->
+    <script type="module" src="router.js"></script>
 </head>
 
 <body>
+<div class="bg-image"></div>
 
-<nav id="navBar" class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom:24px;"></nav>
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">rglfm</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-<div class="container mb-3" id="content"></div>
+    <div class="collapse navbar-collapse" id="navbarCollapse"></div>
+</nav>
+
+<div class="container">
+    <div id="particles-js"></div>
+    <div id="overlay"></div>
+</div>
+
+<!-- setting up particles js -->
+<script type="text/javascript" src="initializeParticles.js"></script>
 
 </body>
 </html>

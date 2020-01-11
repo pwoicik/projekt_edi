@@ -1,7 +1,7 @@
 "use strict";
 
-const Error404 = {
-    render: async function () {
+export const Error404 = {
+    async render() {
         return $("<h1>PAGE NOT FOUND!</h1>");
     },
 };

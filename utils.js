@@ -1,7 +1,7 @@
 "use strict";
 
 const Utils = {
-    parseRequestURL: function () {
+    parseRequestURL() {
         const url = location.hash.slice(1).toLowerCase() || "/";
         const r = url.split("/");
         r.shift();
@@ -9,5 +9,10 @@ const Utils = {
             resource: r.shift(),
             args: r,
         };
+    },
+
+    redirectSearch() {
+        const query = encodeURI($("#query").val());
+        location.hash = `#/search/${query}`;
     },
 };

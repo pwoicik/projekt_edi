@@ -1,11 +1,30 @@
 "use strict";
 
-const Song = {
-    render: async function (args) {
-        return `SONG (${args[0]})`;
-    },
+import {GENIUS_API_KEY} from "../router.js";
 
-    afterRender: async function () {
+export const Song = {
+    async render(args) {
+        const id = args[0];
+
+        if (args[1] === "reload") {
+            location.hash = `#/song/${id}`;
+            location.reload(true);
+            return;
+        }
+
+        const song = await fetch(`https://api.genius.com/songs/${id}?access_token=${GENIUS_API_KEY}`)
+            .then(response => response.json())
+            .then(json => json["response"]["song"]);
+        console.log(song);
+
+        const $songEmbeddingHtml = await getSongEmbeddingHtml(
+            song["id"],
+            song["url"],
+            song["title"],
+            song["primary_artist"]["name"]
+        );
+
+        return $songEmbeddingHtml;
     },
 };
 

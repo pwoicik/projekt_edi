@@ -1,7 +1,7 @@
 "use strict";
 
-const Graphs = {
-    render: async function () {
+export const Graphs = {
+    async render() {
         return $("<h1>GRAPHS</h1>");
     },
 };
