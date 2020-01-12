@@ -20,23 +20,6 @@ nav, #overlay {
     -webkit-filter: blur(2px);
 }
 
-.responsive {
-    width: 100%;
-    height: auto;
-  }
-
-.error-image {
-    background-image: url(../assets/http_code_404_error.jpg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    position: fixed;
-    height: 50%;
-    width: 50%;
-    z-index: -1;
-    box-shadow: 0 0 8px 8px black inset;
-}
-
 #overlay {
     position: relative;
     padding: 50px;
