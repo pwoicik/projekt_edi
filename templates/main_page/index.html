@@ -73,7 +73,13 @@
 </div>
 
 <!-- setting up particles js -->
-<script type="text/javascript" src="../../initializeParticles.js"></script>
+<script type="module">
+    "use strict";
+
+    import {initializeParticles} from "../../script/initializeParticles.js";
+
+    initializeParticles();
+</script>
 
 </body>
 </html>

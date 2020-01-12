@@ -1,6 +1,6 @@
 "use strict";
 
-import {GENIUS_API_KEY} from "../router.js";
+import {GENIUS_API_KEY} from "../script/apiKeys.js";
 
 export const Search = {
     async render(query) {
