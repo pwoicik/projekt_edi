@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+
+    <title>rglfm</title>
+
+    <!-- jQuery scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Bootstrap fonts -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+    <!-- Bootstrap core JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Genius song embedding stylesheets -->
+    <link href="https://assets.genius.com/stylesheets/compiled/embedded_song-f2eb859110213a836c912e26570f05e8.css"
+          media="screen" rel="stylesheet" type="text/css">
+
+    <!-- particles JS script -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../../css/rglfm.css">
+
+    <!-- utility functions -->
+    <script src="../../script/utils.js"></script>
+</head>
+
+<body>
+
+<div class="bg-image"></div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">rglfm</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#/charts">Charts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#/about">About</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+        </form>
+    </div>
+</nav>
+
+<div class="container">
+    <div id="particles-js"></div>
+    <div id="overlay">
+        
+    </div>
+</div>
+
+<!-- setting up particles js -->
+<script type="module">
+    "use strict";
+
+    import {initializeParticles} from "../../script/initializeParticles.js";
+
+    initializeParticles();
+</script>
+
+</body>
+</html>
