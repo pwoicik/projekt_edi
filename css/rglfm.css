@@ -64,3 +64,62 @@ nav, #overlay {
 .text-grey {
     color: #cecece;
 }
+
+.rg_embed_link {
+    display: flex;
+    float: left;
+    align-items: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    left: 500px;
+    top: 60px;
+}
+
+.songTitle {
+    position: absolute;
+    left: 802px;
+    top: 45px;
+    color: #ffff64;
+}
+
+.artistName {
+    position: absolute;
+    left: 802px;
+    top: 110px;
+    color: white;
+}
+
+.producerName {
+    position: absolute;
+    left: 802px;
+    top: 190px;
+    font-size: 20px;
+    color: lightgray;
+}
+
+.albumName {
+    position: absolute;
+    left: 802px;
+    top: 220px;
+    font-size: 20px;
+    color: lightgray;
+}
+
+.displayVideo {
+    position: absolute;
+    left: 500px;
+    top: 380px;
+}
+
+/* for mobile devices but doesnt work YET
+@media screen and (max-width: 800px) {
+    .img-fluid {
+        height: auto;
+        top: 11px;
+    }
+}
+*/

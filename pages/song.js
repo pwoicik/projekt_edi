@@ -24,7 +24,19 @@ export const Song = {
             song["primary_artist"]["name"]
         );
 
-        return $songEmbeddingHtml;
+        const songImage = $(`<img class="img-fluid float-right" src="${song["header_image_thumbnail_url"]}">`);
+
+        const songTitle = $(`<h1 class="display-3 songTitle">${song["title"]}</h1>`);
+
+        const artistName = $(`<h2 class="display-4 artistName">${song["primary_artist"]["name"]}</h2>`);
+
+        const producerName = $(`<span class="producerName">produced by: ${song["producer_artists"]["name"]}</span>`);
+
+        const albumName = $(`<span class="albumName">Album: ${song["album"]["name"]}</span>`);
+
+        const displayVideo = $(`<iframe class="displayVideo" width="640" height="360" src="http://www.youtube.com/embed/watch?v=T0NZsM6XA88" frameborder="0" allowfullscreen></iframe>`);
+
+        return [songImage, songTitle, artistName, producerName, albumName, displayVideo, $songEmbeddingHtml];
     },
 };
 
