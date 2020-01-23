@@ -74,52 +74,84 @@ nav, #overlay {
 .img-fluid {
     max-width: 100%;
     height: auto;
-    position: absolute;
-    left: 500px;
-    top: 60px;
+}
+@media (min-width: 1200px) {
+    .img-fluid {
+        position: absolute;
+        left: 500px;
+        top: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .albumImage {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 500px;
+        top: 375px;
+    }
 }
 
 .songTitle {
-    position: absolute;
-    left: 802px;
-    top: 45px;
     color: #ffff64;
 }
 
+@media (min-width: 1200px) {
+    .songTitle {
+        position: absolute;
+        left: 802px;
+        top: 47px;
+        font-size: 60px;
+    }
+}
+
 .artistName {
-    position: absolute;
-    left: 802px;
-    top: 110px;
     color: white;
 }
 
-.producerName {
-    position: absolute;
-    left: 802px;
-    top: 190px;
-    font-size: 20px;
-    color: lightgray;
+@media (min-width: 1200px) {
+    .artistName {
+        position: absolute;
+        left: 802px;
+        top: 112px;
+        font-size: 40px;
+    }
+}
+
+.albumCSS {
+    color: white;
+    font-size: 30px;
+}
+
+@media (min-width: 1200px) {
+    .albumCSS {
+        position: absolute;
+        left: 802px;
+        top: 355px;
+        font-size: 55px;
+    }
 }
 
 .albumName {
-    position: absolute;
-    left: 802px;
-    top: 220px;
-    font-size: 20px;
-    color: lightgray;
+    color: #ffff64;
+    font-size: 30px;
 }
 
+@media (min-width: 1200px) {
+    .albumName {
+        position: absolute;
+        left: 802px;
+        top: 410px;
+        font-size: 45px;
+    }
+}
+
+
+/*
 .displayVideo {
     position: absolute;
     left: 500px;
     top: 380px;
-}
-
-/* for mobile devices but doesnt work YET
-@media screen and (max-width: 800px) {
-    .img-fluid {
-        height: auto;
-        top: 11px;
-    }
 }
 */
