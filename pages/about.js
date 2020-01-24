@@ -2,6 +2,6 @@
 
 export const About = {
     async render() {
-        return $("<h1>ABOUT</h1>");
+        return new DOMParser().parseFromString("<h1>ABOUT</h1>", "text/html").body.childNodes;
     },
 };
