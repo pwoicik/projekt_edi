@@ -30,7 +30,7 @@ export const Charts = {
     createHeader: () => {
         const header = document.createElement("h1");
         header.classList.add("display-4", "text-white", "mb-3");
-        header.innerText = "Customize";
+        header.innerText = "Custom Search";
 
         return header;
     },
