@@ -84,9 +84,11 @@ export const Charts = {
             const names = this.extractField(topTag, "name").map((val) => decodeURI(val));
             const playcounts = await this.getPlaycounts(names);
             const chartName = `Top artists by tag "${decodeURI(tag)}" on Last.FM`;
-
+            
+            const chart = this.createChart(chartName, names, playcounts);
             document.getElementById("overlay")
-                .appendChild(this.createChart(chartName, names, playcounts));
+                .appendChild(chart);
+            chart.scrollIntoView();
         });
 
         return form;
@@ -125,6 +127,14 @@ export const Charts = {
                 }],
             },
             options: {
+                tooltips:
+                {
+                    callbacks:{
+                        label: (val) => {
+                            return numeral(val.value).format("0.0a");;
+                        }, 
+                    },
+                },
                 legend: {
                     labels: {
                         fontColor: "white",
