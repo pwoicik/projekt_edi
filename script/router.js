@@ -16,12 +16,10 @@ const routes = {
     "/song/:id": Song,
 };
 
-export const router = async function () {
-    const $navbarCollapse = $("#navbarCollapse");
-    const $overlay = $("#overlay");
-
+export const router = async () => {
+    const navbarCollapse = document.getElementById("navbarCollapse");
+    const overlay = document.getElementById("overlay");
     const request = Utils.parseRequestURL();
-    console.log(request);
 
     let parsedUrl = (request.resource ? "/" + request.resource : "/");
     if (request.resource === "search") {
@@ -30,10 +28,10 @@ export const router = async function () {
         parsedUrl += "/:id";
     }
 
-    $navbarCollapse.empty();
-    $navbarCollapse.append(NavBar.render(request.resource));
+    navbarCollapse.innerHTML = "";
+    navbarCollapse.append(...NavBar.render(request.resource));
 
     let page = routes[parsedUrl] ? routes[parsedUrl] : Error404;
-    $overlay.empty();
-    $overlay.append(await page.render(request.args));
+    overlay.innerHTML = "";
+    overlay.append(...await page.render(request.args));
 };

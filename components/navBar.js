@@ -31,16 +31,20 @@ export const NavBar = {
         let searchBar = "";
         if (resource !== "") {
             searchBar = `
-                <form class="form-inline my-2 my-lg-0" action="#" onsubmit="Utils.redirectSearch(); return false;">
+                <form class="form-inline my-2 my-lg-0" 
+                      action="#" 
+                      onsubmit="Utils.redirectSearch(); return false;">
                     <input id="query" class="form-control mr-sm-2" type="search" placeholder="Search">
                 </form>`;
         }
 
-        return `
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            ${charts}
-            ${about}
-        </ul>
-        ${searchBar}`;
+        return new DOMParser().parseFromString(`
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        ${charts}
+                        ${about}
+                    </ul>
+                    ${searchBar}
+                 `,
+            "text/html").body.childNodes;
     },
 };

@@ -12,7 +12,7 @@ const Utils = {
     },
 
     redirectSearch() {
-        const query = encodeURI($("#query").val());
+        const query = encodeURI(document.getElementById("query").value);
         location.hash = `#/search/${query}`;
     },
 };
