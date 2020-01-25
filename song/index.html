@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="../css/rglfm.css">
     <link href="song.css" rel="stylesheet">
 
+    <!-- utility functions -->
+    <script src="../script/utils.js"></script>
     <!-- song's page entry point -->
     <script src="song.js" type="module"></script>
 </head>
@@ -36,7 +38,7 @@
 <div class="bg-image"></div>
 
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-    <a class="navbar-brand" href="/~s214641/rglfm/#">rglfm</a>
+    <a class="navbar-brand" href="/rglfm/#">rglfm</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -45,10 +47,10 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <a class="nav-link text-light" href="/~s214641/rglfm/#/charts">Charts</a>
+                <a class="nav-link text-light" href="/rglfm/#/charts">Charts</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="/~s214641/rglfm/#/about">About</a>
+                <a class="nav-link text-light" href="/rglfm/#/about">About</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0"
@@ -67,7 +69,7 @@
 <script>
     function redirectSearch() {
         const query = encodeURI(document.getElementById("query").value);
-        location.href = `/~s214641/rglfm/#/search/${query}`;
+        location.href = `/rglfm/#/search/${query}`;
     }
 </script>
 
