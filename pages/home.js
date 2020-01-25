@@ -2,7 +2,7 @@
 
 export const Home = {
     async render() {
-        return new DOMParser().parseFromString(`
+        return `
                     <div class="jumbotron bg-transparent text-center">
                         <h1 class="display-4">Search for your favourite songs:</h1>
                         <form class="card card-sm"
@@ -21,7 +21,6 @@ export const Home = {
                             </div>
                         </form>
                     </div>
-                 `,
-            "text/html").body.childNodes;
+                 `;
     },
 };

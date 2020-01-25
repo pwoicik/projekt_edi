@@ -19,19 +19,17 @@ const routes = {
 export const router = async () => {
     const navbarCollapse = document.getElementById("navbarCollapse");
     const overlay = document.getElementById("overlay");
-    const request = Utils.parseRequestURL();
+    const request = Utils.parseURL();
 
-    let parsedUrl = (request.resource ? "/" + request.resource : "/");
-    if (request.resource === "search") {
-        parsedUrl += "/:query";
-    } else if (request.resource === "song") {
-        parsedUrl += "/:id";
-    }
+    const parsedRequest = Utils.parseRequest(request);
 
     navbarCollapse.innerHTML = "";
-    navbarCollapse.append(...NavBar.render(request.resource));
+    const navbar = Utils.parseStringsToDomObjects(NavBar.render(request.resource));
+    navbarCollapse.append(...navbar);
 
-    let page = routes[parsedUrl] ? routes[parsedUrl] : Error404;
+    const page = routes[parsedRequest] ? routes[parsedRequest] : Error404;
+
     overlay.innerHTML = "";
-    overlay.append(...await page.render(request.args));
+    const newElements = Utils.parseStringsToDomObjects(await page.render(request.arg));
+    overlay.append(...newElements);
 };

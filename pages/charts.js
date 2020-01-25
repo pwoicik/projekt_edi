@@ -4,20 +4,22 @@ import {LASTFM_API_KEY} from "../script/apiKeys.js";
 
 export const Charts = {
     async render() {
-        const {names, playcount, chartName} = await getTopArtists();
-        const charts = [createChart(chartName, names, playcount)];
         const header = createHeader();
 
         const input = createInputField();
         const form = createForm(input);
         form.appendChild(input);
 
-        return [header, form, ...charts];
+        const {names, playcount, chartName} = await getTopArtists();
+        const charts = createChart(chartName, names, playcount);
+
+        return [header, form, charts];
     },
 };
 
 async function getTopArtists() {
-    const topArtists = await fetch(`http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&limit=10&api_key=${LASTFM_API_KEY}&format=json`)
+    const topArtists = await fetch("http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists" +
+        `&limit=10&api_key=${LASTFM_API_KEY}&format=json`)
         .then(response => response.json())
         .then(json => json["artists"]["artist"]);
 
@@ -29,11 +31,7 @@ async function getTopArtists() {
 }
 
 function createHeader() {
-    const header = document.createElement("h1");
-    header.classList.add("display-4", "text-white", "mb-3");
-    header.innerText = "Custom Search";
-
-    return header;
+    return "<h1 class='display-4 text-white mb-3'>Custom search</h1>";
 }
 
 function createInputField() {
@@ -42,12 +40,14 @@ function createInputField() {
     input.classList.add("mb-5", "form-control", "form-control-lg", "form-control-borderless");
     input.style.display = "block";
     input.placeholder = "provide tag";
+
     return input;
 }
 
 async function getPlaycounts(names) {
     const playcounts = await names.map((name) =>
-        fetch(`http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${name}&api_key=${LASTFM_API_KEY}&format=json`)
+        fetch(`http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${name}` +
+            `&api_key=${LASTFM_API_KEY}&format=json`)
             .then(response => response.json())
             .then(json => {
                 const artist = json["artist"];
@@ -71,7 +71,8 @@ function createForm(inputField) {
 
         const tag = encodeURI(inputField.value);
 
-        const topTag = await fetch(`http://ws.audioscrobbler.com/2.0/?method=tag.gettopartists&tag=${tag}&limit=10&api_key=${LASTFM_API_KEY}&format=json`)
+        const topTag = await fetch(`http://ws.audioscrobbler.com/2.0/?method=tag.gettopartists&tag=${tag}` +
+            `&limit=10&api_key=${LASTFM_API_KEY}&format=json`)
             .then(response => response.json())
             .then(json => json["topartists"]["artist"]);
         if (topTag.length < 10) {
@@ -99,35 +100,35 @@ function createChart(chartName, names, playcount) {
     chart.classList.add("mb-4");
 
     new Chart(chart, {
-        type: 'bar',
+        type: "bar",
         data: {
             labels: [...names],
             datasets: [{
-                label: '# of total plays on Last.fm',
+                label: "number of total plays on Last.fm",
                 data: [...playcount],
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.89)',
-                    'rgba(54, 162, 235, 0.89)',
-                    'rgba(255, 206, 86, 0.89)',
-                    'rgba(75, 192, 192, 0.89)',
-                    'rgba(153, 102, 255, 0.89)',
-                    'rgba(255, 159, 64, 0.89)',
-                    'rgba(255, 99, 132, 0.89)',
-                    'rgba(54, 162, 235, 0.89)',
-                    'rgba(255, 206, 86, 0.89)',
-                    'rgba(75, 192, 192, 0.89)',
+                    "rgba(255, 99, 132, 0.89)",
+                    "rgba(54, 162, 235, 0.89)",
+                    "rgba(255, 206, 86, 0.89)",
+                    "rgba(75, 192, 192, 0.89)",
+                    "rgba(153, 102, 255, 0.89)",
+                    "rgba(255, 159, 64, 0.89)",
+                    "rgba(255, 99, 132, 0.89)",
+                    "rgba(54, 162, 235, 0.89)",
+                    "rgba(255, 206, 86, 0.89)",
+                    "rgba(75, 192, 192, 0.89)",
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)',
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
+                    "rgba(255, 99, 132, 1)",
+                    "rgba(54, 162, 235, 1)",
+                    "rgba(255, 206, 86, 1)",
+                    "rgba(75, 192, 192, 1)",
+                    "rgba(153, 102, 255, 1)",
+                    "rgba(255, 159, 64, 1)",
+                    "rgba(255, 99, 132, 1)",
+                    "rgba(54, 162, 235, 1)",
+                    "rgba(255, 206, 86, 1)",
+                    "rgba(75, 192, 192, 1)",
                 ],
                 borderWidth: 1,
             }],
@@ -145,7 +146,7 @@ function createChart(chartName, names, playcount) {
                     fontSize: 14,
                 },
             },
-            backgroundColor: 'rgba(0, 0, 0, 0.2)',
+            backgroundColor: "rgba(0, 0, 0, 0.2)",
             responsive: true,
             maintainAspectRatio: true,
             title: {
