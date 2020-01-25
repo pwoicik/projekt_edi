@@ -6,7 +6,7 @@
 
     <title>rglfm</title>
 
-    <!-- jQuery scripts -->
+    <!-- jQuery scripts (required by bootstrap but don't use it) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- Bootstrap core CSS -->
@@ -26,6 +26,16 @@
     <!-- Custom styles -->
     <link rel="stylesheet" href="../../css/rglfm.css">
 
+    <!-- Chart.js script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+
+    <!-- Numeral.js for number formatting -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+
+    <!-- utility functions -->
+    <script src="../../script/utils.js"></script>
+    <!-- app's entry point -->
+    <script defer src="app.js" type="module"></script>
 </head>
 
 <body>
@@ -58,7 +68,7 @@
     <div id="particles-js"></div>
     <div id="overlay">
         <!-- ["header_image_thumbnail_url"] -->
-        <img class="img-fluid float-right" src="https://images.genius.com/98ab519851483dbf686708a7a65baddd.300x300x1.jpg">
+        <img class="img-fluid float-right" src="${song["song_art_image_thumbnail_url"]}">
 
         <!-- ["title"] -->
         <span class="songTitle">hot coffee</span>
