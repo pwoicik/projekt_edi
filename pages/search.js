@@ -37,22 +37,22 @@ export const Search = {
 };
 
 function createHeader(queryText) {
-    return new DOMParser().parseFromString(`
-                <h3 class="mb-4 text-outlined">Results for <a style="font-style: italic">"${queryText}":</a>
-                </h3>
-             `,
-        "text/html").body.firstChild;
+    const header = document.createElement("h3");
+    header.classList.add("mb-4", "text-outlined");
+    header.innerHTML = `Results for <a style="font-style: italic">"${queryText}":</a>`;
+
+    return header;
 }
 
 function createDiv(className) {
-    return new DOMParser().parseFromString(`
-                <div class="${className}"></div>
-             `,
-        "text/html").body.firstChild;
+    const div = document.createElement("div");
+    div.classList.add(className);
+
+    return div;
 }
 
 function createCard(song) {
-    const hash = `#/song/${song["id"]}/reload`;
+    const hash = `#/song/${song["id"]}`;
 
     return new DOMParser().parseFromString(`
                 <div class="col-sm">
@@ -65,6 +65,5 @@ function createCard(song) {
                         </div>
                     </div>
                 </div>
-             `,
-        "text/html").body.firstChild;
+             `, "text/html").body.firstChild;
 }
