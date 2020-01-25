@@ -10,7 +10,17 @@ export const Song = {
 
         const songEmbeddingHtml = await getSongEmbeddingHtml(song["id"]);
 
-        return [songEmbeddingHtml];
+        const songImage = `<img class="img-fluid float-right" src="${song["song_art_image_thumbnail_url"]}">`;
+
+        const songTitle = `<span class="artistName">${song["primary_artist"]["name"]}</span>
+                           <span class="songTitle">${song["title"]}</span>`;
+
+        const albumImage = `<img class="img-fluid float-right albumImage" src="${song["album"]["cover_art_url"]}">`;
+
+        const albumName = `<span class="albumCSS">Album </span>
+                           <span class="albumName">${song["album"]["name"]}</span>`;
+
+        return [songImage, songTitle, songEmbeddingHtml, albumImage, albumName];
     },
 };
 

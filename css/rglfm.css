@@ -71,6 +71,15 @@ nav, #overlay {
     align-items: center;
 }
 
+@media (min-width: 1200px) {
+    .rg_embed_body {
+        display: flex;
+        float: left;
+        align-items: center;
+        width: 425px;
+    }
+}
+
 .img-fluid {
     max-width: 100%;
     height: auto;
@@ -93,31 +102,34 @@ nav, #overlay {
     }
 }
 
-.songTitle {
-    color: #ffff64;
-}
-
-@media (min-width: 1200px) {
-    .songTitle {
-        position: absolute;
-        left: 802px;
-        top: 47px;
-        font-size: 60px;
-    }
-}
-
 .artistName {
     color: white;
+    font-size: 30px;
 }
 
 @media (min-width: 1200px) {
     .artistName {
         position: absolute;
-        left: 802px;
-        top: 112px;
-        font-size: 40px;
+        left: 815px;
+        top: 38px;
+        font-size: 55px;
     }
 }
+
+.songTitle {
+    color: #ffff64;
+    font-size: 30px;
+}
+
+@media (min-width: 1200px) {
+    .songTitle {
+        position: absolute;
+        left: 815px;
+        top: 103px;
+        font-size: 45px;
+    }
+}
+
 
 .albumCSS {
     color: white;
@@ -127,7 +139,7 @@ nav, #overlay {
 @media (min-width: 1200px) {
     .albumCSS {
         position: absolute;
-        left: 802px;
+        left: 815px;
         top: 355px;
         font-size: 55px;
     }
@@ -141,7 +153,7 @@ nav, #overlay {
 @media (min-width: 1200px) {
     .albumName {
         position: absolute;
-        left: 802px;
+        left: 815px;
         top: 410px;
         font-size: 45px;
     }
