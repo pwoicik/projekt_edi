@@ -1,10 +1,5 @@
-@media (min-width: 1200px) {
-    .rg_embed_body {
-        display: flex;
-        float: left;
-        align-items: center;
-        width: 425px;
-    }
+.rg_embed {
+    width: 425px;
 }
 
 .img-fluid {
@@ -21,7 +16,7 @@
 }
 
 @media (min-width: 1200px) {
-    .albumImage {
+    .album-image {
         width: 300px;
         height: 300px;
         position: absolute;
@@ -30,13 +25,13 @@
     }
 }
 
-.artistName {
+.artist-name {
     color: white;
     font-size: 30px;
 }
 
 @media (min-width: 1200px) {
-    .artistName {
+    .artist-name {
         position: absolute;
         left: 815px;
         top: 38px;
@@ -44,13 +39,13 @@
     }
 }
 
-.songTitle {
+.song-title {
     color: #ffff64;
     font-size: 30px;
 }
 
 @media (min-width: 1200px) {
-    .songTitle {
+    .song-title {
         position: absolute;
         left: 815px;
         top: 103px;
@@ -59,13 +54,13 @@
 }
 
 
-.albumCSS {
+.album {
     color: white;
     font-size: 30px;
 }
 
 @media (min-width: 1200px) {
-    .albumCSS {
+    .album {
         position: absolute;
         left: 815px;
         top: 355px;
@@ -73,13 +68,13 @@
     }
 }
 
-.albumName {
+.album-name {
     color: #ffff64;
     font-size: 30px;
 }
 
 @media (min-width: 1200px) {
-    .albumName {
+    .album-name {
         position: absolute;
         left: 815px;
         top: 410px;
