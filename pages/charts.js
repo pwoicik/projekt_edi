@@ -39,7 +39,7 @@ function createInputField() {
     input.type = "search";
     input.classList.add("mb-5", "form-control", "form-control-lg", "form-control-borderless");
     input.style.display = "block";
-    input.placeholder = "provide tag";
+    input.placeholder = "Type tag";
 
     return input;
 }
