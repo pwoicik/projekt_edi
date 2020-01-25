@@ -23,15 +23,15 @@ window.addEventListener("DOMContentLoaded", async () => {
                             src="${song["song_art_image_thumbnail_url"]}"
                             alt="BŁĄD">`;
 
-    const songTitle = `<span class="artistName">${song["primary_artist"]["name"]}</span>
-                       <span class="songTitle">${song["title"]}</span>`;
+    const songTitle = `<span class="artist-name">${song["primary_artist"]["name"]}</span>
+                       <span class="song-title">${song["title"]}</span>`;
 
-    const albumImage = `<img class="img-fluid float-right albumImage" 
+    const albumImage = `<img class="img-fluid float-right album-image" 
                              src="${song["album"]["cover_art_url"]}"
                              alt="BŁĄD">`;
 
-    const albumName = `<span class="albumCSS">Album </span>
-                       <span class="albumName">${song["album"]["name"]}</span>`;
+    const albumName = `<span class="album">Album </span>
+                       <span class="album-name">${song["album"]["name"]}</span>`;
 
     $("#overlay").append(songImage, songTitle, songEmbeddingHtml, albumImage, albumName);
 });
@@ -39,7 +39,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
 async function getSongEmbeddingHtml(id, url, title, artist) {
     const div = `<div id='rg_embed_link_${id}' class='rg_embed_link' data-song-id='${id}'>
-                    Read <a href='${url}'>“​${title}” by ​${artist}</a> on Genius</div>`;
+                    Read “​${title}” by ​${artist} on Genius</div>`;
 
     const embeddingScript = await fetch(`https://genius.com/songs/${id}/embed.js`)
         .then(response => response.text())
