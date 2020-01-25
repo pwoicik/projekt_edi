@@ -2,6 +2,6 @@
 
 export const About = {
     async render() {
-        return $("<h1>ABOUT</h1>");
+        return "<h1>ABOUT</h1>";
     },
 };
