@@ -23,25 +23,6 @@ const Utils = {
 
     redirectSearch() {
         const query = encodeURI(document.getElementById("query").value);
-        location.hash = `#/search/${query}`;
-    },
-
-    parseStringsToDomObjects(elements) {
-        const parser = new DOMParser();
-
-        if (!Array.isArray(elements)) {
-            return parser.parseFromString(elements, "text/html").body.childNodes;
-        }
-
-        const domObjects = [];
-        for (const element of elements) {
-            if (typeof element === "string") {
-                domObjects.push(...parser.parseFromString(element, "text/html").body.childNodes);
-            } else {
-                domObjects.push(element);
-            }
-        }
-
-        return domObjects;
+        location.href = `#/search/${query}`;
     },
 };

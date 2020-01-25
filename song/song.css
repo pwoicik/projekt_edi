@@ -1,0 +1,94 @@
+.rg_embed_link {
+    display: flex;
+    float: left;
+    align-items: center;
+}
+
+@media (min-width: 1200px) {
+    .rg_embed_body {
+        display: flex;
+        float: left;
+        align-items: center;
+        width: 425px;
+    }
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 1200px) {
+    .img-fluid {
+        position: absolute;
+        left: 500px;
+        top: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .albumImage {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 500px;
+        top: 375px;
+    }
+}
+
+.artistName {
+    color: white;
+    font-size: 30px;
+}
+
+@media (min-width: 1200px) {
+    .artistName {
+        position: absolute;
+        left: 815px;
+        top: 38px;
+        font-size: 55px;
+    }
+}
+
+.songTitle {
+    color: #ffff64;
+    font-size: 30px;
+}
+
+@media (min-width: 1200px) {
+    .songTitle {
+        position: absolute;
+        left: 815px;
+        top: 103px;
+        font-size: 45px;
+    }
+}
+
+
+.albumCSS {
+    color: white;
+    font-size: 30px;
+}
+
+@media (min-width: 1200px) {
+    .albumCSS {
+        position: absolute;
+        left: 815px;
+        top: 355px;
+        font-size: 55px;
+    }
+}
+
+.albumName {
+    color: #ffff64;
+    font-size: 30px;
+}
+
+@media (min-width: 1200px) {
+    .albumName {
+        position: absolute;
+        left: 815px;
+        top: 410px;
+        font-size: 45px;
+    }
+}
