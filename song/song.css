@@ -1,9 +1,3 @@
-.rg_embed_link {
-    display: flex;
-    float: left;
-    align-items: center;
-}
-
 @media (min-width: 1200px) {
     .rg_embed_body {
         display: flex;
