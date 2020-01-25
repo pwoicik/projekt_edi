@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+
+    <title>rglfm</title>
+
+    <!-- jQuery scripts (required by bootstrap but don't use it) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Bootstrap fonts -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+    <!-- Bootstrap core JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Genius song embedding stylesheets -->
+    <link href="https://assets.genius.com/stylesheets/compiled/embedded_song-f2eb859110213a836c912e26570f05e8.css"
+          media="screen" rel="stylesheet" type="text/css">
+
+    <!-- particles JS script -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../../css/rglfm.css">
+
+    <!-- Chart.js script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+
+    <!-- Numeral.js for number formatting -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+
+    <!-- utility functions -->
+    <script src="../../script/utils.js"></script>
+    <!-- app's entry point -->
+    <script defer src="app.js" type="module"></script>
+</head>
+
+<body>
+
+<div class="bg-image"></div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">rglfm</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#/charts">Charts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#/about">About</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+        </form>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div id="particles-js"></div>
+    <div id="overlay">
+        <!-- ["header_image_thumbnail_url"] -->
+        <img class="img-fluid float-right" src="${song["song_art_image_thumbnail_url"]}">
+
+        <!-- ["title"] -->
+        <span class="songTitle">hot coffee</span>
+
+        <!-- ["primary_artist"]["name"] -->
+        <span class="artistName">schafter</span>
+
+        <!-- ["media"]["url] -->
+        <!--<iframe class="displayVideo" width="640" height="360" src="http://www.youtube.com/embed/watch?v=T0NZsM6XA88" frameborder="0" allowfullscreen>--></iframe>
+
+        <!-- ["embed_content"] -->
+        <div id='rg_embed_link_4171056' class='rg_embed_link' data-song-id='4171056'>Read on Genius</div>
+        <script crossorigin src='//genius.com/songs/4171056/embed.js'></script>
+
+        <!--["album"]["cover_art_album"]-->
+        <img class="img-fluid float-right albumImage" src="https://images.genius.com/f5a105f03ee8470d8f5ae8a276494a6f.640x640x1.jpg">
+
+        <!-- ["album"]["name"]-->
+        <span class="albumCSS">Album </span>
+        <span class="albumName">audiotele</span>
+
+    </div>
+</div>
+
+<!-- setting up particles js -->
+<script type="module">
+    "use strict";
+
+    import {initializeParticles} from "../../script/initializeParticles.js";
+
+    initializeParticles();
+</script>
+
+</body>
+</html>
