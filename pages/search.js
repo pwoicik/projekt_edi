@@ -52,12 +52,12 @@ function createDiv(className) {
 }
 
 function createCard(song) {
-    const hash = `#/song/${song["id"]}`;
+    const href = `song#/${song["id"]}`;
 
     return new DOMParser().parseFromString(`
                 <div class="col-sm">
                     <div class="card border-dark mb-3 bg-dark text-grey" 
-                         onclick="location.hash = '${hash}'">
+                         onclick="location.href = '${href}'">
                         <img src="${song["song_art_image_url"]}" 
                              class="card-img-top" alt="image">
                         <div class="card-body d-flex flex-column">
