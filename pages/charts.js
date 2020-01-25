@@ -40,6 +40,7 @@ function createInputField() {
     input.classList.add("mb-5", "form-control", "form-control-lg", "form-control-borderless");
     input.style.display = "block";
     input.placeholder = "provide tag";
+
     return input;
 }
 

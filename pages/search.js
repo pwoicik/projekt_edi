@@ -56,11 +56,15 @@ function createCard(song) {
 
     return new DOMParser().parseFromString(`
                 <div class="col-sm">
-                    <div class="card border-dark mb-3 bg-dark text-grey" onclick="location.hash = '${hash}'">
-                        <img src="${song["song_art_image_url"]}" class="card-img-top" alt="image">
+                    <div class="card border-dark mb-3 bg-dark text-grey" 
+                         onclick="location.hash = '${hash}'">
+                        <img src="${song["song_art_image_url"]}" 
+                             class="card-img-top" alt="image">
                         <div class="card-body d-flex flex-column">
-                            <h4 class="card-text text-white" style="margin-bottom: 2px">${song["title"]}</h4>
-                            <h6 class="card-text" style="font-style: italic">by ${song["primary_artist"]["name"]}</h6>
+                            <h4 class="card-text text-white" 
+                                style="margin-bottom: 2px">${song["title"]}</h4>
+                            <h6 class="card-text"
+                                style="font-style: italic">by ${song["primary_artist"]["name"]}</h6>
                             <a class="float-right text-right mt-3">views: ${song["stats"]["pageviews"]}</a>
                         </div>
                     </div>
