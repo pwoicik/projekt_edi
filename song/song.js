@@ -118,6 +118,17 @@ function getYoutubeEmbedUrl(url) {
     return `https://www.youtube.com/embed/${videoId}?rel=0`;
 }
 
-function createMoreSongsDiv() {
+async function createMoreSongsDiv({primary_artist}) {
+    const songs = await fetch(`https://api.genius.com/artists/${primary_artist.id}/songs?access_token=${GENIUS_API_KEY}`)
+        .then(response => response.json())
+        .then(json => json["response"]["songs"]);
 
+    let songsDiv = `<div class="more-songs">
+                        <p class="more-songs-header">More song with <em>"${primary_artist["name"]}"<em>:</p>`;
+    for (const song of songs) {
+        songsDiv += `<p class="another-song"><a href="#" onclick="location.hash = '/${song["id"]}'; location.reload();">${song["full_title"]}</a></p>`;
+    }
+    songsDiv += "</div>";
+
+    return songsDiv;
 }

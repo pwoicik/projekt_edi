@@ -56,7 +56,7 @@ function createCard(song) {
 
     return new DOMParser().parseFromString(`
                 <div class="col-sm">
-                    <div class="card border-dark mb-3 bg-dark text-grey" 
+                    <div class="card border-dark mb-3 bg-black-transparent text-grey" 
                          onclick="location.href = '${href}'">
                         <img src="${song["song_art_image_url"]}" 
                              class="card-img-top" alt="image">
