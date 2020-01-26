@@ -64,3 +64,9 @@ nav, #overlay {
 .text-grey {
     color: #cecece;
 }
+
+.fa-eye:before {
+    font-family: FontAwesome, sans-serif;
+    content: "\f06e";
+    margin-right: 0.7em;
+}

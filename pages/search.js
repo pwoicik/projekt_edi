@@ -65,7 +65,8 @@ function createCard(song) {
                                 style="margin-bottom: 2px">${song["title"]}</h4>
                             <h6 class="card-text"
                                 style="font-style: italic">by ${song["primary_artist"]["name"]}</h6>
-                            <a class="float-right text-right mt-3">views: ${song["stats"]["pageviews"]}</a>
+                            <a class="float-right text-right mt-3">
+                              <i class="fa-eye"></i>${numeral(song["stats"]["pageviews"]).format("0.0a")}</a>
                         </div>
                     </div>
                 </div>

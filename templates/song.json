@@ -1,0 +1,746 @@
+{
+  "annotation_count": 19,
+  "api_path": "/songs/4171056",
+  "apple_music_id": "1464882961",
+  "apple_music_player_url": "https://genius.com/songs/4171056/apple_music_player",
+  "description": {
+    "dom": {
+      "tag": "root",
+      "children": [
+        {
+          "tag": "h3",
+          "children": [
+            "ZNAJDZIECIE NAS RÓWNIEŻ NA ",
+            {
+              "tag": "a",
+              "attributes": {
+                "href": "http://instagram.com/rapgeniuspolska",
+                "rel": "noopener nofollow"
+              },
+              "children": [
+                "INSTAGRAMIE"
+              ]
+            },
+            "!"
+          ]
+        },
+        "",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "a",
+              "attributes": {
+                "href": "http://www.facebook.com/RapGeniusPolska",
+                "rel": "noopener nofollow"
+              },
+              "children": [
+                {
+                  "tag": "p",
+                  "children": [
+                    {
+                      "tag": "img",
+                      "attributes": {
+                        "src": "https://images.rapgenius.com/e1c9b90e780962446546120eefde91f9.360x60x15.gif",
+                        "width": 360,
+                        "height": 60
+                      },
+                      "data": {
+                        "animated": "true",
+                        "thumbnail": {
+                          "src": "https://images.rapgenius.com/e1c9b90e780962446546120eefde91f9.300x50x1.jpg",
+                          "height": 50,
+                          "width": 300
+                        }
+                      }
+                    }
+                  ]
+                },
+                "",
+                {
+                  "tag": "hr"
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attributes": {
+                "href": "https://genius.com/Rap-genius-editors-rap-genius-for-beginners-polish-lyrics",
+                "rel": "noopener"
+              },
+              "data": {
+                "api_path": "/songs/189917"
+              },
+              "children": [
+                {
+                  "tag": "b",
+                  "children": [
+                    "Rap Genius dla Początkujących?"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "  ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "a",
+              "attributes": {
+                "href": "https://genius.com/Rap-genius-editors-rap-genius-faq-polish-lyrics",
+                "rel": "noopener"
+              },
+              "data": {
+                "api_path": "/songs/187001"
+              },
+              "children": [
+                {
+                  "tag": "b",
+                  "children": [
+                    "Jak korzystać z Rap Genius?"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "a",
+          "attributes": {
+            "href": "https://genius.com/Rap-genius-editors-contributor-guidelines-polish-lyrics",
+            "rel": "noopener"
+          },
+          "data": {
+            "api_path": "/songs/189511"
+          },
+          "children": [
+            {
+              "tag": "b",
+              "children": [
+                "Jak tworzyć własne adnotacje?"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "embed_content": "<div id='rg_embed_link_4171056' class='rg_embed_link' data-song-id='4171056'>Read <a href='https://genius.com/Schafter-hot-coffee-lyrics'>“​hot coffee” by ​schafter</a> on Genius</div> <script crossorigin src='//genius.com/songs/4171056/embed.js'></script>",
+  "featured_video": false,
+  "full_title": "​hot coffee by ​schafter",
+  "header_image_thumbnail_url": "https://images.genius.com/98ab519851483dbf686708a7a65baddd.300x300x1.jpg",
+  "header_image_url": "https://images.genius.com/98ab519851483dbf686708a7a65baddd.600x600x1.jpg",
+  "id": 4171056,
+  "lyrics_owner_id": 4730328,
+  "lyrics_state": "complete",
+  "path": "/Schafter-hot-coffee-lyrics",
+  "pyongs_count": 19,
+  "recording_location": null,
+  "release_date": "2019-05-24",
+  "song_art_image_thumbnail_url": "https://images.genius.com/98ab519851483dbf686708a7a65baddd.300x300x1.jpg",
+  "song_art_image_url": "https://images.genius.com/98ab519851483dbf686708a7a65baddd.600x600x1.jpg",
+  "stats": {
+    "accepted_annotations": 17,
+    "contributors": 51,
+    "iq_earners": 51,
+    "transcribers": 9,
+    "unreviewed_annotations": 0,
+    "verified_annotations": 1,
+    "hot": false,
+    "pageviews": 144456
+  },
+  "title": "​hot coffee",
+  "title_with_featured": "​hot coffee",
+  "url": "https://genius.com/Schafter-hot-coffee-lyrics",
+  "current_user_metadata": {
+    "permissions": [
+      "see_pageviews",
+      "view_apple_music_player",
+      "create_comment",
+      "view_song_story_gallery"
+    ],
+    "excluded_permissions": [
+      "follow",
+      "award_transcription_iq",
+      "remove_transcription_iq",
+      "pyong",
+      "edit_lyrics",
+      "view_annotation_engagement_data",
+      "publish",
+      "unpublish",
+      "edit_spotify_details",
+      "hide",
+      "unhide",
+      "toggle_featured_video",
+      "add_pinned_annotation_to",
+      "add_community_annotation_to",
+      "destroy",
+      "mark_as_not_spam",
+      "edit_spotify_annotations_for",
+      "verify_lyrics",
+      "unverify_lyrics",
+      "edit_anything",
+      "edit_any_media",
+      "edit",
+      "rename",
+      "edit_tags",
+      "watch_fact_track",
+      "reindex",
+      "view_lyrics_synchronization",
+      "enable_media",
+      "disable_media",
+      "edit_lyrics_or_annotation_brackets",
+      "see_editorial_indicators",
+      "view_attribution_visualization",
+      "edit_annotation_brackets",
+      "preview_lyrics_for_export",
+      "hide_apple_player",
+      "unhide_apple_player",
+      "trigger_apple_match",
+      "mark_lyrics_evaluation_as_approved",
+      "mark_lyrics_evaluation_as_staff_approved",
+      "mark_lyrics_evaluation_as_unapproved",
+      "mark_lyrics_evaluation_as_un_staff_approved",
+      "view_transcriber_media_player",
+      "override_apple_match",
+      "edit_youtube_url",
+      "edit_soundcloud_url",
+      "edit_spotify_uuid",
+      "edit_vevo_url",
+      "moderate_annotations",
+      "create_annotation",
+      "see_short_id",
+      "manage_chart_item",
+      "create_tag",
+      "propose_lyrics_edit",
+      "moderate_lyrics_edit_proposals"
+    ],
+    "interactions": {
+      "pyong": false,
+      "following": false
+    },
+    "relationships": {},
+    "iq_by_action": {}
+  },
+  "album": {
+    "api_path": "/albums/523659",
+    "cover_art_url": "https://images.genius.com/f5a105f03ee8470d8f5ae8a276494a6f.640x640x1.jpg",
+    "full_title": "audiotele by ​schafter",
+    "id": 523659,
+    "name": "audiotele",
+    "url": "https://genius.com/albums/Schafter/Audiotele",
+    "artist": {
+      "api_path": "/artists/1251445",
+      "header_image_url": "https://images.genius.com/007548beedbb7d6131acdac17a3c95cc.1000x1000x1.jpg",
+      "id": 1251445,
+      "image_url": "https://images.genius.com/007548beedbb7d6131acdac17a3c95cc.1000x1000x1.jpg",
+      "is_meme_verified": false,
+      "is_verified": true,
+      "name": "​schafter",
+      "url": "https://genius.com/artists/Schafter",
+      "iq": 421
+    }
+  },
+  "custom_performances": [
+    {
+      "label": "Executive Produced By",
+      "artists": [
+        {
+          "api_path": "/artists/1296991",
+          "header_image_url": "https://assets.genius.com/images/default_avatar_300.png?1578089122",
+          "id": 1296991,
+          "image_url": "https://assets.genius.com/images/default_avatar_300.png?1578089122",
+          "is_meme_verified": false,
+          "is_verified": false,
+          "name": "Jan Porębski",
+          "url": "https://genius.com/artists/Jan-porebski"
+        }
+      ]
+    },
+    {
+      "label": "Mixed And Mastered By",
+      "artists": [
+        {
+          "api_path": "/artists/1100657",
+          "header_image_url": "https://images.genius.com/76f218b73611efe03578980b05ee8049.598x598x1.jpg",
+          "id": 1100657,
+          "image_url": "https://images.genius.com/76f218b73611efe03578980b05ee8049.598x598x1.jpg",
+          "is_meme_verified": false,
+          "is_verified": false,
+          "name": "Rafał Smoleń",
+          "url": "https://genius.com/artists/Rafa-smolen"
+        }
+      ]
+    }
+  ],
+  "description_annotation": {
+    "_type": "referent",
+    "annotator_id": 2793634,
+    "annotator_login": "Rozrabiaka",
+    "api_path": "/referents/16049866",
+    "classification": "accepted",
+    "fragment": "​hot coffee",
+    "id": 16049866,
+    "is_description": true,
+    "path": "/16049866/Schafter-hot-coffee/Hot-coffee",
+    "range": {
+      "content": "​hot coffee"
+    },
+    "song_id": 4171056,
+    "url": "https://genius.com/16049866/Schafter-hot-coffee/Hot-coffee",
+    "verified_annotator_ids": [],
+    "annotatable": {
+      "api_path": "/songs/4171056",
+      "client_timestamps": {
+        "updated_by_human_at": 1578184702,
+        "lyrics_updated_at": 1578184702
+      },
+      "context": "​schafter",
+      "id": 4171056,
+      "image_url": "https://images.genius.com/98ab519851483dbf686708a7a65baddd.600x600x1.jpg",
+      "link_title": "​hot coffee by ​schafter",
+      "title": "​hot coffee",
+      "type": "Song",
+      "url": "https://genius.com/Schafter-hot-coffee-lyrics"
+    },
+    "annotations": [
+      {
+        "api_path": "/annotations/16049866",
+        "body": {
+          "dom": {
+            "tag": "root",
+            "children": [
+              {
+                "tag": "h3",
+                "children": [
+                  "ZNAJDZIECIE NAS RÓWNIEŻ NA ",
+                  {
+                    "tag": "a",
+                    "attributes": {
+                      "href": "http://instagram.com/rapgeniuspolska",
+                      "rel": "noopener nofollow"
+                    },
+                    "children": [
+                      "INSTAGRAMIE"
+                    ]
+                  },
+                  "!"
+                ]
+              },
+              "",
+              {
+                "tag": "p",
+                "children": [
+                  {
+                    "tag": "a",
+                    "attributes": {
+                      "href": "http://www.facebook.com/RapGeniusPolska",
+                      "rel": "noopener nofollow"
+                    },
+                    "children": [
+                      {
+                        "tag": "p",
+                        "children": [
+                          {
+                            "tag": "img",
+                            "attributes": {
+                              "src": "https://images.rapgenius.com/e1c9b90e780962446546120eefde91f9.360x60x15.gif",
+                              "width": 360,
+                              "height": 60
+                            },
+                            "data": {
+                              "animated": "true",
+                              "thumbnail": {
+                                "src": "https://images.rapgenius.com/e1c9b90e780962446546120eefde91f9.300x50x1.jpg",
+                                "height": 50,
+                                "width": 300
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "",
+                      {
+                        "tag": "hr"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "a",
+                    "attributes": {
+                      "href": "https://genius.com/Rap-genius-editors-rap-genius-for-beginners-polish-lyrics",
+                      "rel": "noopener"
+                    },
+                    "data": {
+                      "api_path": "/songs/189917"
+                    },
+                    "children": [
+                      {
+                        "tag": "b",
+                        "children": [
+                          "Rap Genius dla Początkujących?"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "  ",
+              {
+                "tag": "p",
+                "children": [
+                  {
+                    "tag": "a",
+                    "attributes": {
+                      "href": "https://genius.com/Rap-genius-editors-rap-genius-faq-polish-lyrics",
+                      "rel": "noopener"
+                    },
+                    "data": {
+                      "api_path": "/songs/187001"
+                    },
+                    "children": [
+                      {
+                        "tag": "b",
+                        "children": [
+                          "Jak korzystać z Rap Genius?"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "a",
+                "attributes": {
+                  "href": "https://genius.com/Rap-genius-editors-contributor-guidelines-polish-lyrics",
+                  "rel": "noopener"
+                },
+                "data": {
+                  "api_path": "/songs/189511"
+                },
+                "children": [
+                  {
+                    "tag": "b",
+                    "children": [
+                      "Jak tworzyć własne adnotacje?"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "comment_count": 0,
+        "community": true,
+        "custom_preview": null,
+        "has_voters": true,
+        "id": 16049866,
+        "pinned": false,
+        "share_url": "https://genius.com/16049866",
+        "source": null,
+        "state": "accepted",
+        "url": "https://genius.com/16049866/Schafter-hot-coffee/Hot-coffee",
+        "verified": false,
+        "votes_total": 4,
+        "current_user_metadata": {
+          "permissions": [
+            "create_comment"
+          ],
+          "excluded_permissions": [
+            "vote",
+            "edit",
+            "cosign",
+            "uncosign",
+            "destroy",
+            "accept",
+            "reject",
+            "see_unreviewed",
+            "clear_votes",
+            "propose_edit_to",
+            "pin_to_profile",
+            "unpin_from_profile",
+            "update_source",
+            "edit_custom_preview"
+          ],
+          "interactions": {
+            "cosign": false,
+            "pyong": false,
+            "vote": null
+          },
+          "iq_by_action": {}
+        },
+        "authors": [
+          {
+            "attribution": 1,
+            "pinned_role": null,
+            "user": {
+              "api_path": "/users/2793634",
+              "avatar": {
+                "tiny": {
+                  "url": "https://s3.amazonaws.com/filepicker-images-rapgenius/lsm3m7i3f9s",
+                  "bounding_box": {
+                    "width": 16,
+                    "height": 16
+                  }
+                },
+                "thumb": {
+                  "url": "https://s3.amazonaws.com/filepicker-images-rapgenius/lsm3m7i3f9s",
+                  "bounding_box": {
+                    "width": 32,
+                    "height": 32
+                  }
+                },
+                "small": {
+                  "url": "https://s3.amazonaws.com/filepicker-images-rapgenius/lsm3m7i3f9s",
+                  "bounding_box": {
+                    "width": 100,
+                    "height": 100
+                  }
+                },
+                "medium": {
+                  "url": "https://s3.amazonaws.com/filepicker-images-rapgenius/lsm3m7i3f9s",
+                  "bounding_box": {
+                    "width": 300,
+                    "height": 400
+                  }
+                }
+              },
+              "header_image_url": "https://s3.amazonaws.com/filepicker-images-rapgenius/4vtmptvasdf",
+              "human_readable_role_for_display": "Editor",
+              "id": 2793634,
+              "iq": 262403,
+              "login": "Rozrabiaka",
+              "name": "Rozrabiaka",
+              "role_for_display": "editor",
+              "url": "https://genius.com/Rozrabiaka",
+              "current_user_metadata": {
+                "permissions": [],
+                "excluded_permissions": [
+                  "follow"
+                ],
+                "interactions": {
+                  "following": false
+                }
+              }
+            }
+          }
+        ],
+        "cosigned_by": [],
+        "rejection_comment": null,
+        "verified_by": null
+      }
+    ]
+  },
+  "featured_artists": [],
+  "lyrics_marked_complete_by": null,
+  "media": [
+    {
+      "provider": "youtube",
+      "start": 0,
+      "type": "video",
+      "url": "http://www.youtube.com/watch?v=T0NZsM6XA88"
+    }
+  ],
+  "primary_artist": {
+    "api_path": "/artists/1251445",
+    "header_image_url": "https://images.genius.com/007548beedbb7d6131acdac17a3c95cc.1000x1000x1.jpg",
+    "id": 1251445,
+    "image_url": "https://images.genius.com/007548beedbb7d6131acdac17a3c95cc.1000x1000x1.jpg",
+    "is_meme_verified": false,
+    "is_verified": true,
+    "name": "​schafter",
+    "url": "https://genius.com/artists/Schafter",
+    "iq": 421
+  },
+  "producer_artists": [
+    {
+      "api_path": "/artists/1251445",
+      "header_image_url": "https://images.genius.com/007548beedbb7d6131acdac17a3c95cc.1000x1000x1.jpg",
+      "id": 1251445,
+      "image_url": "https://images.genius.com/007548beedbb7d6131acdac17a3c95cc.1000x1000x1.jpg",
+      "is_meme_verified": false,
+      "is_verified": true,
+      "name": "​schafter",
+      "url": "https://genius.com/artists/Schafter",
+      "iq": 421
+    }
+  ],
+  "song_relationships": [
+    {
+      "type": "samples",
+      "songs": []
+    },
+    {
+      "type": "sampled_in",
+      "songs": []
+    },
+    {
+      "type": "interpolates",
+      "songs": []
+    },
+    {
+      "type": "interpolated_by",
+      "songs": []
+    },
+    {
+      "type": "cover_of",
+      "songs": []
+    },
+    {
+      "type": "covered_by",
+      "songs": []
+    },
+    {
+      "type": "remix_of",
+      "songs": []
+    },
+    {
+      "type": "remixed_by",
+      "songs": []
+    },
+    {
+      "type": "live_version_of",
+      "songs": []
+    },
+    {
+      "type": "performed_live_as",
+      "songs": []
+    }
+  ],
+  "verified_annotations_by": [
+    {
+      "api_path": "/users/6918121",
+      "avatar": {
+        "tiny": {
+          "url": "https://images.genius.com/avatars/tiny/784bf97ae4313d962a0d881db1565010",
+          "bounding_box": {
+            "width": 16,
+            "height": 16
+          }
+        },
+        "thumb": {
+          "url": "https://images.genius.com/avatars/thumb/784bf97ae4313d962a0d881db1565010",
+          "bounding_box": {
+            "width": 32,
+            "height": 32
+          }
+        },
+        "small": {
+          "url": "https://images.genius.com/avatars/small/784bf97ae4313d962a0d881db1565010",
+          "bounding_box": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "medium": {
+          "url": "https://images.genius.com/avatars/medium/784bf97ae4313d962a0d881db1565010",
+          "bounding_box": {
+            "width": 300,
+            "height": 400
+          }
+        }
+      },
+      "header_image_url": "https://images.genius.com/avatars/medium/784bf97ae4313d962a0d881db1565010",
+      "human_readable_role_for_display": "Verified Artist",
+      "id": 6918121,
+      "iq": 421,
+      "login": "schafter",
+      "name": "​schafter",
+      "role_for_display": "verified_artist",
+      "url": "https://genius.com/schafter",
+      "current_user_metadata": {
+        "permissions": [],
+        "excluded_permissions": [
+          "follow"
+        ],
+        "interactions": {
+          "following": false
+        }
+      }
+    }
+  ],
+  "verified_contributors": [
+    {
+      "contributions": [
+        "annotations"
+      ],
+      "artist": {
+        "api_path": "/artists/1251445",
+        "header_image_url": "https://images.genius.com/007548beedbb7d6131acdac17a3c95cc.1000x1000x1.jpg",
+        "id": 1251445,
+        "image_url": "https://images.genius.com/007548beedbb7d6131acdac17a3c95cc.1000x1000x1.jpg",
+        "is_meme_verified": false,
+        "is_verified": true,
+        "name": "​schafter",
+        "url": "https://genius.com/artists/Schafter",
+        "iq": 421
+      },
+      "user": {
+        "api_path": "/users/6918121",
+        "avatar": {
+          "tiny": {
+            "url": "https://images.genius.com/avatars/tiny/784bf97ae4313d962a0d881db1565010",
+            "bounding_box": {
+              "width": 16,
+              "height": 16
+            }
+          },
+          "thumb": {
+            "url": "https://images.genius.com/avatars/thumb/784bf97ae4313d962a0d881db1565010",
+            "bounding_box": {
+              "width": 32,
+              "height": 32
+            }
+          },
+          "small": {
+            "url": "https://images.genius.com/avatars/small/784bf97ae4313d962a0d881db1565010",
+            "bounding_box": {
+              "width": 100,
+              "height": 100
+            }
+          },
+          "medium": {
+            "url": "https://images.genius.com/avatars/medium/784bf97ae4313d962a0d881db1565010",
+            "bounding_box": {
+              "width": 300,
+              "height": 400
+            }
+          }
+        },
+        "header_image_url": "https://images.genius.com/avatars/medium/784bf97ae4313d962a0d881db1565010",
+        "human_readable_role_for_display": "Verified Artist",
+        "id": 6918121,
+        "iq": 421,
+        "login": "schafter",
+        "name": "​schafter",
+        "role_for_display": "verified_artist",
+        "url": "https://genius.com/schafter",
+        "current_user_metadata": {
+          "permissions": [],
+          "excluded_permissions": [
+            "follow"
+          ],
+          "interactions": {
+            "following": false
+          }
+        }
+      }
+    }
+  ],
+  "verified_lyrics_by": [],
+  "writer_artists": [
+    {
+      "api_path": "/artists/1251445",
+      "header_image_url": "https://images.genius.com/007548beedbb7d6131acdac17a3c95cc.1000x1000x1.jpg",
+      "id": 1251445,
+      "image_url": "https://images.genius.com/007548beedbb7d6131acdac17a3c95cc.1000x1000x1.jpg",
+      "is_meme_verified": false,
+      "is_verified": true,
+      "name": "​schafter",
+      "url": "https://genius.com/artists/Schafter",
+      "iq": 421
+    }
+  ]
+}
