@@ -1,5 +1,15 @@
 .rg_embed {
     width: 425px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.rg_embed_header a, .rg_embed_body a, .rg_embed a[data-id], .rg_embed a[data-id]:visited {
+    color: white;
+}
+
+.rg_embed a[data-id] {
+    background-color: rgba(153, 153, 153, 0.4);
 }
 
 .img-fluid {

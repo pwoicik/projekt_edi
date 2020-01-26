@@ -96,7 +96,7 @@ function createForm(inputField) {
 function createChart(chartName, names, playcount) {
     const chart = document.createElement("canvas");
     chart.id = chartName;
-    chart.style.backgroundColor = 'rgb(0, 0, 0, 0.3)';
+    chart.style.backgroundColor = 'rgb(0, 0, 0, 0.5)';
     chart.classList.add("mb-4");
 
     new Chart(chart, {
