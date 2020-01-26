@@ -16,16 +16,15 @@
     background-color: rgba(153, 153, 153, 0.4);
 }
 
-@media screen and (max-width: 1205px) {
+@media screen and (max-width: 1204px) {
     .container {
         width: 100vw;
-        margin: 50px 0 50px 0;
         padding: 0;
     }
 
     #overlay {
+        margin: 50px 0 50px 0;
         width: 100vw;
-        margin: 0;
         padding: 0 20px;
         display: grid;
         grid-template-columns: 100%;
@@ -51,6 +50,7 @@
 
 @media screen and (min-width: 1205px) {
     #overlay {
+        margin: 50px 0 50px 0;
         display: grid;
         grid-template-columns: 50% auto;
         grid-auto-rows: max-content min-content min-content auto min-content;
@@ -154,9 +154,9 @@
     color: #555400;
 }
 
-.text-yellow,
 .artist-name,
 .another-song a:link,
-.another-song a:visited {
+.another-song a:visited,
+.text-yellow {
     color: rgb(255, 251, 122);
 }

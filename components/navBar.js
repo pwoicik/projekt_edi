@@ -6,12 +6,12 @@ export const NavBar = {
         if (resource === "charts") {
             charts = `
                 <li class="nav-item active">
-                    <a class="nav-link text-light" href="#/charts">Charts</a>
+                  <a class="nav-link text-light" href="#/charts">Charts</a>
                 </li>`;
         } else {
             charts = `
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#/charts">Charts</a>
+                  <a class="nav-link text-light" href="#/charts">Charts</a>
                 </li>`;
         }
 
@@ -19,12 +19,12 @@ export const NavBar = {
         if (resource === "about") {
             about = `
                 <li class="nav-item active">
-                    <a class="nav-link text-light" href="#/about">About</a>
+                  <a class="nav-link text-light" href="#/about">About</a>
                 </li>`;
         } else {
             about = `
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#/about">About</a>
+                  <a class="nav-link text-light" href="#/about">About</a>
                 </li>`;
         }
 
@@ -34,16 +34,15 @@ export const NavBar = {
                 <form class="form-inline my-2 my-lg-0" 
                       action="#" 
                       onsubmit="Utils.redirectSearch(); return false;">
-                    <input id="query" class="form-control mr-sm-2" type="search" placeholder="Type song or artist">
+                  <input id="query" class="form-control mr-sm-2" type="search" placeholder="Type song or artist">
                 </form>`;
         }
 
         return `
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        ${charts}
-                        ${about}
+                      ${charts}
+                      ${about}
                     </ul>
-                    ${searchBar}
-                 `;
+                    ${searchBar}`;
     },
 };

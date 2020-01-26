@@ -31,13 +31,13 @@ async function getTopArtists() {
 }
 
 function createHeader() {
-    return "<h1 class='display-4 text-white mb-3'>Custom search</h1>";
+    return "<h1 class='text-white mb-3 text-outlined'>Custom search</h1>";
 }
 
 function createInputField() {
     const input = document.createElement("input");
     input.type = "search";
-    input.classList.add("mb-5", "form-control", "form-control-lg", "form-control-borderless");
+    input.classList.add("mb-5", "form-control", "form-control-lg", "border-black");
     input.style.display = "block";
     input.placeholder = "Type tag";
 
@@ -96,6 +96,9 @@ function createForm(inputField) {
 function createChart(chartName, names, playcount) {
     const chart = document.createElement("canvas");
     chart.id = chartName;
+    chart.style.borderWidth = "0.2rem";
+    chart.style.borderStyle = "solid";
+    chart.style.borderColor = "black";
     chart.style.backgroundColor = "rgb(0, 0, 0, 0.5)";
     chart.classList.add("mb-4");
 

@@ -2,16 +2,14 @@
 
 export const About = {
     async render() {
-        return `<h1 class='display-1 text-white mb-3' 
-                    style="text-align:center;
-                           text-shadow: 2px 2px 0 #000;">
-                  AUTORZY:</h1>
-                <h1 class='display-4 text-white' 
-                    style="text-align:center;
-                           line-height: 1.5;">
-                  <a style="color: red">Patryk Wójcik</a><br>
-                  <a style="color: green">Kamil Krzych</a><br>
-                  <a style="color: blue">Andrzej Krucan</a>
-                </h1>`;
+        return `<div class="about">
+                  <h3 class="about-h display-2 text-outlined">CREATORS</h3>
+                  <img class="av" src="assets/avatar_pink.png" alt="AVATAR" onclick="window.open('https://github.com/pwoicik')">
+                  <p class="name text-yellow text-outlined">Patryk Wójcik</p>
+                  <img class="av" src="assets/avatar_green.png" alt="AVATAR" onclick="window.open('https://github.com/krucan-a')">
+                  <p class="name text-yellow text-outlined">Andrzej Krucan</p>                  
+                  <img class="av" src="assets/avatar_blue.png" alt="AVATAR" onclick="window.open('https://github.com/KKrzych09')">
+                  <p class="name text-yellow text-outlined">Kamil Krzych</p>
+                </div>`;
     },
 };
