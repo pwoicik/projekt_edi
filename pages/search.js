@@ -10,64 +10,50 @@ export const Search = {
             .then(response => response.json())
             .then(json => json["response"]["hits"]);
 
-        const rows = [createHeader(queryText)];
+        console.log(hits);
 
-        columnLoop:
-            for (let i = 0; i < 4; i++) {
-                const row = createDiv("row");
+        let cardGrid = `<h3 class="display-4 text-outlined mb-4 mt-5">
+                          Results for <em class="text-yellow">"${queryText}"</em>:
+                        </h3>
+                        <div class='card-grid'>`;
 
-                for (let j = 0; j < 3; j++) {
-                    const songIndex = i * 3 + j;
-                    if (songIndex > hits.length - 1) {
-                        for (let i = 0; i < hits.length - songIndex + 1; i++) {
-                            row.appendChild(createDiv("col-sm"));
-                        }
-                        rows.push(row);
-                        break columnLoop;
-                    }
+        for (let i = 0; i < 3; i++) {
+            cardGrid += `<div class='card-column-${i}'>`;
 
-                    row.appendChild(createCard(hits[songIndex]["result"]));
-                }
+            for (let j = 0; 3 * j + i < hits.length; j++) {
+                const song = hits[3 * j + i]["result"];
 
-                rows.push(row);
+                cardGrid += createCard(song);
             }
 
-        return rows;
+            cardGrid += "</div>"
+        }
+
+        return cardGrid;
     },
 };
 
 function createHeader(queryText) {
-    const header = document.createElement("h3");
-    header.classList.add("mb-4", "text-outlined");
-    header.innerHTML = `Results for <a style="font-style: italic">"${queryText}":</a>`;
-
-    return header;
+    return `<h3 class="text-outlined mb-4">Results for <a style="font-style: italic">"${queryText}":</a></h3>`;
 }
 
 function createDiv(className) {
-    const div = document.createElement("div");
-    div.classList.add(className);
-
-    return div;
+    return `<div class="${className}">`;
 }
 
-function createCard(song) {
-    const href = `song#/${song["id"]}`;
+function createCard({id, song_art_image_url, title, primary_artist, stats}) {
+    const href = `song#/${id}`;
 
-    return new DOMParser().parseFromString(`
-                <div class="col-sm">
-                    <div class="card border-dark mb-3 bg-dark text-grey" 
-                         onclick="location.href = '${href}'">
-                        <img src="${song["song_art_image_url"]}" 
-                             class="card-img-top" alt="image">
-                        <div class="card-body d-flex flex-column">
-                            <h4 class="card-text text-white" 
-                                style="margin-bottom: 2px">${song["title"]}</h4>
-                            <h6 class="card-text"
-                                style="font-style: italic">by ${song["primary_artist"]["name"]}</h6>
-                            <a class="float-right text-right mt-3">views: ${song["stats"]["pageviews"]}</a>
-                        </div>
-                    </div>
-                </div>
-             `, "text/html").body.firstChild;
+    return `<div class="card card-custom bg-black-transparent" 
+                 onclick="location.href = '${href}'">
+              <img src="${song_art_image_url}" 
+                   class="card-img-top" alt="image">
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-text " 
+                    style="margin-bottom: 2px">${title}</h4>
+                <h6 class="card-text text-white"><em>by ${primary_artist["name"]}</em></h6>
+                  <a class="float-right text-white text-right mt-3">
+                    <i class="fa-eye"></i>${numeral(stats["pageviews"]).format("0.0a")}</a>
+              </div>
+            </div>`;
 }

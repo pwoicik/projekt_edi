@@ -37,8 +37,11 @@
 
 <div class="bg-image"></div>
 
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-    <a class="navbar-brand" href="/rglfm/#">rglfm</a>
+
+<nav class="navbar navbar-expand-lg bg-black-transparent navbar-dark">
+    <a class="navbar-brand" href="../#">
+        <span class="text-yellow">rg</span><span class="text-red">lfm</span>
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -47,10 +50,10 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <a class="nav-link text-light" href="/rglfm/#/charts">Charts</a>
+                <a class="nav-link text-light" href="../#/charts">Charts</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="/rglfm/#/about">About</a>
+                <a class="nav-link text-light" href="../#/about">About</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0"
@@ -69,7 +72,7 @@
 <script>
     function redirectSearch() {
         const query = encodeURI(document.getElementById("query").value);
-        location.href = `/rglfm/#/search/${query}`;
+        location.href = `../#/search/${query}`;
     }
 </script>
 
