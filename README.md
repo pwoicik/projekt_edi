@@ -1,3 +1,4 @@
 # rglfm
+This project was created as an assignment for EDI course.
 
-Current stable release: <http://v-ie.uek.krakow.pl/~s214641/rglfm/>
+Link to website: <http://v-ie.uek.krakow.pl/~s214641/rglfm/>
