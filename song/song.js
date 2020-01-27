@@ -128,7 +128,7 @@ async function createMoreSongsDiv({primary_artist}) {
                       <p class="more-songs-header">More song with <em>"${primary_artist["name"]}"<em>:</p>`;
     for (const {id, full_title} of songs) {
         songsDiv += `<p class="another-song">
-                       <a href="/~s214641/rglfm/song/#/${id}" 
+                       <a href="#/${id}" 
                           onclick="location.hash = '/${id}'; location.reload();">
                          ${full_title}</a>
                      </p>`;

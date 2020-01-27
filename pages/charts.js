@@ -31,7 +31,7 @@ async function getTopArtists() {
 }
 
 function createHeader() {
-    return "<h1 class='text-white mb-3 text-outlined'>Custom search</h1>";
+    return "<h1 class='text-white mt-5 mb-3 text-outlined'>Custom search</h1>";
 }
 
 function createInputField() {
